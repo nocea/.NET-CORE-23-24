@@ -8,5 +8,6 @@ namespace EjercicioObligatorioRepaso.Servicios
 {
     internal interface IntMenu
     {
+        
     }
 }

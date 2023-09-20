@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\EjercicioObligatorioRepaso",
+    "\\EjercicioObligatorioRepaso\\EjercicioObligatorioRepaso",
+    "\\EjercicioObligatorioRepaso\\EjercicioObligatorioRepaso\\Controladores",
+    "\\EjercicioObligatorioRepaso\\EjercicioObligatorioRepaso\\Entidades",
+    "\\EjercicioObligatorioRepaso\\EjercicioObligatorioRepaso\\Servicios"
   ],
+  "SelectedNode": "\\EjercicioObligatorioRepaso\\EjercicioObligatorioRepaso.sln",
   "PreviewInSolutionExplorer": false
 }

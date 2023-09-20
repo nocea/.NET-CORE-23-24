@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EjercicioObligatorioRepaso.Servicios
 {
-    internal class ImplMenu
+    internal class ImplMenu:IntMenu
     {
+
     }
 }
