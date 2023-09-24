@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E7C5951-9BF3-4EBB-B175-910D0DCA2C26}</ProjectGuid>
+    <ProjectGuid>{08A5FE30-8D5C-40FD-A517-918B91E22AFC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EjercicioObligatorioRepaso</RootNamespace>
-    <AssemblyName>EjercicioObligatorioRepaso</AssemblyName>
+    <RootNamespace>EjercicioObligatorio1</RootNamespace>
+    <AssemblyName>EjercicioObligatorio1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controladores\Menu.cs" />
-    <Compile Include="Entidades\Empleados.cs" />
+    <Compile Include="ImplMenu.cs" />
+    <Compile Include="IntMenu.cs" />
+    <Compile Include="Menu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Servicios\ImplEmpleado.cs" />
-    <Compile Include="Servicios\ImplMenu.cs" />
-    <Compile Include="Servicios\IntEmpleado.cs" />
-    <Compile Include="Servicios\IntMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

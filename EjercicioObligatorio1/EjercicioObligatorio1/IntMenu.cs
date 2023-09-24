@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EjercicioObligatorioRepaso.Servicios
+namespace EjercicioObligatorio1
 {
-    internal interface IntEmpleado
+    public interface IntMenu
     {
+        void MostrarMenu();
     }
 }
