@@ -15,7 +15,6 @@ namespace EjercicioObligatorio1
             Console.WriteLine("2.-->Modificar Empleado");
             Console.WriteLine("3.-->Exportar fichero");
             Console.WriteLine("4.-->Cerrar App");
-            Console.ReadLine();
         }
     }
 }

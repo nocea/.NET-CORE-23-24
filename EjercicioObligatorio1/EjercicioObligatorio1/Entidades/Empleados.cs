@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EjercicioObligatorio1
+namespace EjercicioObligatorio1.Entidades
 {
-    public interface IntMenu
+    public class Empleados
     {
-        void MostrarMenu();
     }
 }
