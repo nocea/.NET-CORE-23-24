@@ -43,13 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ImplMenu.cs" />
-    <Compile Include="IntMenu.cs" />
-    <Compile Include="Menu.cs" />
+    <Compile Include="Entidades\Empleados.cs" />
+    <Compile Include="Servicios\ImplEmpleados.cs" />
+    <Compile Include="Servicios\ImplMenu.cs" />
+    <Compile Include="Servicios\IntEmpleados.cs" />
+    <Compile Include="Servicios\IntMenu.cs" />
+    <Compile Include="Controladores\Menu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

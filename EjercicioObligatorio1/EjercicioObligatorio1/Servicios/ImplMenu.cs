@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EjercicioObligatorio1.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,16 @@ namespace EjercicioObligatorio1
             Console.WriteLine("2.-->Modificar Empleado");
             Console.WriteLine("3.-->Exportar fichero");
             Console.WriteLine("4.-->Cerrar App");
+        }
+        public void GuardarFichero(List<Empleados> Empleados)
+        {
+            int opcion = 0;
+            int empleado;
+            String ruta = "unSoloEmpleado.txt";
+        }
+        public List<Empleados> AsignarNumeroEmpleado(List<Empleados> listaEmpleados)
+        {
+            return null;
         }
     }
 }
