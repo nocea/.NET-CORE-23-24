@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\ArrayList.cs" />
     <Compile Include="Entidades\Empleados.cs" />
     <Compile Include="Servicios\ImplEmpleados.cs" />
     <Compile Include="Servicios\ImplMenu.cs" />

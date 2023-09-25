@@ -10,5 +10,7 @@ namespace EjercicioObligatorio1.Servicios
     internal interface IntEmpleados
     {
         Empleados RegistroEmpleado();
+        int CapturaEntero(string txt, int min, int max);
+        List<Empleados> ModificarEmpleados(List<Empleados> listaEmpleados);
     }
 }

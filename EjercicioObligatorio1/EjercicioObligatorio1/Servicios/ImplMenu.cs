@@ -12,7 +12,6 @@ namespace EjercicioObligatorio1
     {
         public void MostrarMenu()
         {
-            Console.WriteLine("Introduzca una opcion:");
             Console.WriteLine("1.-->Registrar Empleado");
             Console.WriteLine("2.-->Modificar Empleado");
             Console.WriteLine("3.-->Exportar fichero");
