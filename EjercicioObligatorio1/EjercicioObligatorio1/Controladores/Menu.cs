@@ -24,17 +24,22 @@ namespace EjercicioObligatorio1
                 {
                     case 1:
                         listaEmpleados.Add(intEmpleados.RegistroEmpleado());
-                        listaEmpleados = intMenu.AsignarNumeroEmpleado(listaEmpleados);
                         break;
                     case 2:
-                        if (listaEmpleados.Any())
+                        if (listaEmpleados.Count == 0)
                         {
                             Console.WriteLine("No existe ningún empleado Registrado");
+                            Console.WriteLine("Pulse para volver al menú");
+                            Console.ReadKey();
+                            Console.Clear();
                         }
                         else
                         {
-                           
+                            listaEmpleados = intEmpleados.ModificarEmpleados(listaEmpleados);
                         }
+                        break;
+                    case 3:
+                        intMenu.GuardarFichero(listaEmpleados);
                         break;
                 }
             } while (opcion != 4);

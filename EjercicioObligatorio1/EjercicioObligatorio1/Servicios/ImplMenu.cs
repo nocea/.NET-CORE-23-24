@@ -21,9 +21,14 @@ namespace EjercicioObligatorio1
         {
             
         }
-        public List<Empleados> AsignarNumeroEmpleado(List<Empleados> listaEmpleados)
-        {
-            return null;
-        }
+            public List<Empleados> AsignarNumeroEmpleado(List<Empleados> listaEmpleados)
+            {
+                for (int i = 0; i < listaEmpleados.Count(); i++)
+                {
+                listaEmpleados[i].NumEmpleado=i + 1;
+                }
+                return listaEmpleados;
+            }
+        
     }
 }

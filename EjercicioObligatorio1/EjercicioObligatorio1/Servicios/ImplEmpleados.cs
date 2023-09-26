@@ -22,13 +22,14 @@ namespace EjercicioObligatorio1.Servicios
             Console.Clear();
             nuevoEmpleado.FechaNac = CrearFecha();
             nuevoEmpleado.Dni = CrearDni();
-            Console.WriteLine("Titulación más alta del empleado-->");
+            Console.Write("Titulación más alta del empleado-->");
             nuevoEmpleado.Titulacion=Console.ReadLine();
             Console.Clear();
             nuevoEmpleado.NumSegu = CapturaDigito("Introduce tu numero de la Seguridad Social-->",6);
+            Console.Clear();
             nuevoEmpleado.NumCuenta = CapturaDigito("Introduce tu numero de tu Cuenta Bancaria",6);
             Console.Clear();
-            Console.WriteLine("!Se han guardado todos los datos de tu empleado¡");
+            Console.WriteLine("!Se han guardado tus datos {0}¡",nuevoEmpleado.Nombre);
             Console.WriteLine("Pulsa una tecla para volver al menú");
             Console.ReadKey();
             Console.Clear();
@@ -72,24 +73,24 @@ namespace EjercicioObligatorio1.Servicios
                         empleadoMod.FechaNac= CrearFecha();
                         break;
                     case 4:
-                        System.out.println("DNI actual-->" + empleado.getDni());
-                        System.out.print("Nuevo DNI-->");
-                        empleado.setDni(CreaDNI());
+                        Console.WriteLine("DNI actual-->" + empleadoMod.Dni);
+                        Console.WriteLine("Nuevo DNI-->");
+                        empleadoMod.Dni=CrearDni();
                         break;
                     case 5:
-                        System.out.println("Titulacion actual-->" + empleado.getTitulacion());
-                        System.out.print("Nueva titulacion-->");
-                        empleado.setTitulacion(scan.next());
+                        Console.WriteLine("Titulacion actual-->" + empleadoMod.Titulacion);
+                        Console.WriteLine("Nueva titulacion-->");
+                        empleadoMod.Titulacion = Console.ReadLine();
                         break;
                     case 6:
-                        System.out.println("Numero SS actual-->" + empleado.getNumSegu());
-                        System.out.print("Nuevo numero-->");
-                        empleado.setNumSegu(CompruebaNumero(12, "Debe tener 12 digitos"));
+                        Console.WriteLine("Numero SS actual-->" + empleadoMod.NumSegu);
+                        Console.WriteLine("Nuevo numero-->");
+                        empleadoMod.NumSegu = CapturaDigito("Introduce tu numero la Seguridad Social", 6);
                         break;
                     case 7:
-                        System.out.println("Nombre actual-->" + empleado.getNumCuen());
-                        System.out.print("Nuevo numero-->");
-                        empleado.setNumCuen(CompruebaNumero(6, "Debe tener 6 digitos"));
+                        Console.WriteLine("Numero cuenta actual-->" + empleadoMod.NumCuenta);
+                        Console.WriteLine("Nuevo numero-->");
+                        empleadoMod.NumCuenta= CapturaDigito("Introduce tu numero de tu Cuenta Bancaria", 6);
                         break;
                 }
             } while (opcion != 0);
@@ -185,6 +186,6 @@ namespace EjercicioObligatorio1.Servicios
                 }
             } while (numero.ToString().Length != numDigitos);
             return numero;
-        }
+        } 
     }
 }
