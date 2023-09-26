@@ -17,9 +17,22 @@ namespace EjercicioObligatorio1
             Console.WriteLine("3.-->Exportar fichero");
             Console.WriteLine("4.-->Cerrar App");
         }
-        public void GuardarFichero(List<Empleados> Empleados)
+        public void GuardarFichero(List<Empleados> listaEmpleados)
         {
-            
+            int opcion;
+            string ruta;
+            Console.WriteLine("1-->Guardar un solo empleado");
+            Console.WriteLine("2--Guardar todos los empleados");
+            Console.Write("Introduce una opción de las siguientes:");
+            do
+            {
+                opcion = Convert.ToInt32(Console.ReadLine());
+                if (opcion <1 || opcion >2)
+                {
+                    Console.WriteLine("Esa opción no existe");
+                }
+            } while (opcion <1 || opcion >2);
+            ruta1=
         }
             public List<Empleados> AsignarNumeroEmpleado(List<Empleados> listaEmpleados)
             {
