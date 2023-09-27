@@ -1,0 +1,3 @@
+--------Lista Empleados-----------
+Empleado Nº:1 [nombre=mario, apellidos=nocea, dni=12345678-s, titulacion=bac, fechaNac=5/7/2003]
+Empleado Nº:2 [nombre=antonio, apellidos=gomez, dni=12344444-t, titulacion=eso, fechaNac=28/2/2003]

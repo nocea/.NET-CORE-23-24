@@ -1,0 +1,2 @@
+--------Empleado Elegido-----------
+Empleado Nº:1 [nombre=mario, apellidos=nocea, dni=12345678-s, titulacion=bac, fechaNac=5/7/2003]

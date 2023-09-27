@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controladores\ArrayList.cs" />
     <Compile Include="Entidades\Empleados.cs" />
     <Compile Include="Servicios\ImplEmpleados.cs" />
     <Compile Include="Servicios\ImplMenu.cs" />
@@ -55,6 +54,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Ficheros\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

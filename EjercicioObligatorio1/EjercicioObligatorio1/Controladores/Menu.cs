@@ -14,7 +14,7 @@ namespace EjercicioObligatorio1
         {
             IntMenu intMenu = new ImplMenu();
             IntEmpleados intEmpleados = new ImplEmpleados();
-            List<Empleados> listaEmpleados = new ArrayList<Empleados>();
+            List<Empleados> listaEmpleados = new List<Empleados>();
             int opcion = 0;
             do
             {
@@ -24,6 +24,7 @@ namespace EjercicioObligatorio1
                 {
                     case 1:
                         listaEmpleados.Add(intEmpleados.RegistroEmpleado());
+                        listaEmpleados = intMenu.AsignarNumeroEmpleado(listaEmpleados);
                         break;
                     case 2:
                         if (listaEmpleados.Count == 0)

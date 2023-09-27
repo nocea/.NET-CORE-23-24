@@ -21,8 +21,7 @@ namespace EjercicioObligatorio1.Entidades
         public long NumCuenta { get => numCuenta; set => numCuenta = value; }
         public override string ToString()
         {
-            return "Empleado Nº:" + numEmpleado + " [nombre=" + nombre + ", apellidos=" + apellidos + ", dni=" + dni + ", titulacion="
-                + titulacion + ", fechaNac=" + fechaNac + "]";
+            return "Empleado Nº:" + NumEmpleado + " [nombre=" + Nombre + ", apellidos=" + Apellidos + ", dni=" + Dni + ", titulacion="+ Titulacion + ", fechaNac=" + FechaNac + "]";
         }
     }
 }

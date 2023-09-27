@@ -5,3 +5,10 @@ C:\Users\Mario Nocea\Desktop\GITHUB\.NET-CORE-23-24\EjercicioObligatorio1\Ejerci
 C:\Users\Mario Nocea\Desktop\GITHUB\.NET-CORE-23-24\EjercicioObligatorio1\EjercicioObligatorio1\obj\Debug\EjercicioObligatorio1.csproj.CoreCompileInputs.cache
 C:\Users\Mario Nocea\Desktop\GITHUB\.NET-CORE-23-24\EjercicioObligatorio1\EjercicioObligatorio1\obj\Debug\EjercicioObligatorio1.exe
 C:\Users\Mario Nocea\Desktop\GITHUB\.NET-CORE-23-24\EjercicioObligatorio1\EjercicioObligatorio1\obj\Debug\EjercicioObligatorio1.pdb
+C:\Users\Puesto10\Desktop\GITHUB\.NET-CORE-23-24\EjercicioObligatorio1\EjercicioObligatorio1\bin\Debug\EjercicioObligatorio1.exe.config
+C:\Users\Puesto10\Desktop\GITHUB\.NET-CORE-23-24\EjercicioObligatorio1\EjercicioObligatorio1\bin\Debug\EjercicioObligatorio1.exe
+C:\Users\Puesto10\Desktop\GITHUB\.NET-CORE-23-24\EjercicioObligatorio1\EjercicioObligatorio1\bin\Debug\EjercicioObligatorio1.pdb
+C:\Users\Puesto10\Desktop\GITHUB\.NET-CORE-23-24\EjercicioObligatorio1\EjercicioObligatorio1\obj\Debug\EjercicioObligatorio1.csproj.AssemblyReference.cache
+C:\Users\Puesto10\Desktop\GITHUB\.NET-CORE-23-24\EjercicioObligatorio1\EjercicioObligatorio1\obj\Debug\EjercicioObligatorio1.csproj.CoreCompileInputs.cache
+C:\Users\Puesto10\Desktop\GITHUB\.NET-CORE-23-24\EjercicioObligatorio1\EjercicioObligatorio1\obj\Debug\EjercicioObligatorio1.exe
+C:\Users\Puesto10\Desktop\GITHUB\.NET-CORE-23-24\EjercicioObligatorio1\EjercicioObligatorio1\obj\Debug\EjercicioObligatorio1.pdb
