@@ -36,7 +36,9 @@ namespace EjercicioObligatorio1
             } while (opcion < 1 || opcion > 2);
             if (opcion == 1)
             {
+                //Declaro la ruta del archivo
                 ruta = ("C:\\Users\\Puesto10\\Desktop\\GITHUB\\.NET-CORE-23-24\\EjercicioObligatorio1\\EjercicioObligatorio1\\Ficheros\\unSoloEmpleado.txt");
+                //Pregunto que empleado quiere guardar
                 Console.Write("¿Que empleado quiere guardar de la lista?(1..." + listaEmpleados.Count() + ")");
                 do
                 {
@@ -46,7 +48,8 @@ namespace EjercicioObligatorio1
                         Console.WriteLine("Ese empleado no existe");
                     }
                 } while (numEmpleado < 1 || numEmpleado > listaEmpleados.Count());
-                sw = File.CreateText(ruta);
+                sw = File.CreateText(ruta);//Creo el archivo en la ruta
+                //Escribo los datos con .ToString()
                 sw.WriteLine("--------Empleado Elegido-----------");
                 sw.Write(listaEmpleados[numEmpleado-1].ToString());
             }
@@ -55,6 +58,7 @@ namespace EjercicioObligatorio1
                 ruta = ("C:\\Users\\Puesto10\\Desktop\\GITHUB\\.NET-CORE-23-24\\EjercicioObligatorio1\\EjercicioObligatorio1\\Ficheros\\todosLosEmpleados.txt");
                 sw=File.CreateText(ruta);
                 sw.WriteLine("--------Lista Empleados-----------");
+                //Todos los empleados con un salto de linea
                 for (int i = 0; i < listaEmpleados.Count(); i++)
                 {
                     sw.WriteLine(listaEmpleados[i].ToString());
@@ -67,7 +71,7 @@ namespace EjercicioObligatorio1
             {
                 for (int i = 0; i < listaEmpleados.Count(); i++)
                 {
-                listaEmpleados[i].NumEmpleado=i + 1;
+                listaEmpleados[i].NumEmpleado=i + 1;//se le añade uno al indice para que sea más claro al guardarlo.
                 }
                 return listaEmpleados;
             }  

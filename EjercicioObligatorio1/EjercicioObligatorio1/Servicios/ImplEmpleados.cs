@@ -12,7 +12,8 @@ namespace EjercicioObligatorio1.Servicios
     {
         public Empleados RegistroEmpleado()
         {
-            Empleados nuevoEmpleado=new Empleados();
+            Empleados nuevoEmpleado=new Empleados();//instancia
+            //Pido todos los datos y los guardo en cada atributo del objeto
             Console.WriteLine("Introduce los datos del empleado");
             Console.Write("Nombre del empleado-->");
             nuevoEmpleado.Nombre = Console.ReadLine();
@@ -40,6 +41,7 @@ namespace EjercicioObligatorio1.Servicios
             int numeroEmpleado;
             int opcion;
             Empleados empleadoMod;
+            //Pido el numero de empleado
             numeroEmpleado = CapturaEntero("Introduzca su numero de empleado",1,listaEmpleados.Count());
             numeroEmpleado = numeroEmpleado - 1;
             do
@@ -54,6 +56,7 @@ namespace EjercicioObligatorio1.Servicios
                 Console.WriteLine("7-->Numero Cuenta Bancaria.");
                 Console.WriteLine("0-->Volver al menu.");
                 opcion = CapturaEntero("Introduzca una opción de las siguientes", 0, 7);
+                //guardo el empleado que quiero guardar y el dato que quieres guardar
                 empleadoMod = listaEmpleados[numeroEmpleado];
                 switch (opcion)
                 {
@@ -94,8 +97,12 @@ namespace EjercicioObligatorio1.Servicios
                         break;
                 }
             } while (opcion != 0);
+            //guardo los cambios
+            listaEmpleados[numeroEmpleado] = empleadoMod;
             return listaEmpleados;
         }
+        /*Metodo para crear un dni y validarlo
+         devuelve un string con el formato de dni*/
         private string CrearDni()
         {
             int numeroDni;
@@ -112,9 +119,9 @@ namespace EjercicioObligatorio1.Servicios
                     
                     Console.WriteLine("¿Es correcto tu DNI(s/n)?-->" + numeroDni + "-" + letraDni + ":");
                     sino = Console.ReadKey(true).KeyChar;
-                    sino = Char.ToLower(sino);
+                    sino = Char.ToLower(sino);//lo vuelvo minúscula para que no importe
                     
-                    if (sino != 's' && sino != 'n')
+                    if (sino != 's' && sino != 'n')//si no es ni n ni s
                     {
                         Console.WriteLine("Debe introducir 's' para aceptar y 'n' para volver a introducir su dni");
                         estaBien = false;
@@ -133,8 +140,11 @@ namespace EjercicioObligatorio1.Servicios
                 } while (sino != 's' && sino != 'n');
             } while (!estaBien);
             Console.Clear();
+            //Le pongo el formato y lo devuelvo
             return numeroDni+"-"+letraDni;
         }
+        /*Metodo que crea una fecha y comprueba que los meses y los dias estén correctos
+         he puesto de años 1900 y 2100 por poner un limite*/
         private string CrearFecha()
         {
             int dia, mes, año;
@@ -152,6 +162,7 @@ namespace EjercicioObligatorio1.Servicios
             {
                 dia = CapturaEntero("Introduce tu dia de nacimiento", 1, 31);
             }
+            //Devuelvo con formato
             return dia + "/" + mes + "/" + año;
         }
         public int CapturaEntero(string txt, int min, int max)
@@ -173,7 +184,7 @@ namespace EjercicioObligatorio1.Servicios
             Console.Clear();
             return numero;
         }
-        public int CapturaDigito(string txt,int numDigitos)
+        private int CapturaDigito(string txt,int numDigitos)
         {
             int numero;
             do
