@@ -41,7 +41,6 @@ namespace EjercicioObligatorio1
                 listaEmpleados[i].NumEmpleado=i + 1;
                 }
                 return listaEmpleados;
-            }
-        
+            }  
     }
 }

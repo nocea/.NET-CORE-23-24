@@ -43,10 +43,6 @@ namespace EjercicioObligatorio1
                         break;
                 }
             } while (opcion != 4);
-
-
-
-
         }
     }
 }
